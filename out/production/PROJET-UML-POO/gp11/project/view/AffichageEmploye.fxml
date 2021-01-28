@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1300.0" style="-fx-background-color: #737373;" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gp11.project.controllers.AffichageEmploye">
+    <children>
+        <Button layoutX="40.0" layoutY="255.0" mnemonicParsing="false" onAction="#Insertion" text="Insérer les employés" />
+        <Button layoutX="28.0" layoutY="364.0" mnemonicParsing="false" onAction="#DeleteUpdate" prefHeight="25.0" prefWidth="162.0" text="Mise à jour et suppression" />
+        <Button fx:id="retour" layoutX="40.0" layoutY="463.0" mnemonicParsing="false" onAction="#Retour" prefHeight="25.0" prefWidth="124.0" text="Retour" />
+      <TableView fx:id="tableEmpl" layoutX="207.0" prefHeight="600.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="IdEmpl" prefWidth="75.0" text="ID Employé" />
+          <TableColumn fx:id="NomEmpl" prefWidth="174.0" text="Nom de l'employé" />
+            <TableColumn fx:id="PrenomEmpl" prefWidth="166.0" text="Prénom de l'employé" />
+            <TableColumn fx:id="Sexe" prefWidth="90.0" text="Sexe" />
+            <TableColumn fx:id="MailEmpl" prefWidth="161.0" text="Adresse mail" />
+            <TableColumn fx:id="TelEmpl" prefWidth="157.0" text="Téléphone" />
+            <TableColumn fx:id="ServiceTrav" prefWidth="269.0" text="Service de travail" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

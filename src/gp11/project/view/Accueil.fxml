@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gp11.project.controllers.Accueil">
+   <children>
+      <MenuBar prefHeight="27.0" prefWidth="700.0" style="-fx-background-color: #ff4406;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#TransEmploye" text="Employé" />
+                  <MenuItem mnemonicParsing="false" onAction="#TransChauffeur" text="Chauffeur" />
+                  <MenuItem mnemonicParsing="false" onAction="#TransReparation" text="reparation" />
+                  <MenuItem mnemonicParsing="false" onAction="#TransGarage" text="Garage" />
+                  <MenuItem mnemonicParsing="false" onAction="#quitter" text="Quitter" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#Apropos" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="rootPane" layoutY="27.0" prefHeight="474.0" prefWidth="700.0" style="-fx-background-color: #737373;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <Button layoutX="578.0" layoutY="14.0" mnemonicParsing="false" onAction="#Deconnexion" prefHeight="25.0" prefWidth="108.0" text="Déconnexion" />
+            <ImageView fitHeight="275.0" fitWidth="391.0" layoutX="203.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Parcautomobile.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
